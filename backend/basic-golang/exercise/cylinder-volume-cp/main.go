@@ -18,11 +18,15 @@ import (
 func main() {
 	// TODO: answer here
 	var (
-		r float32 = 2
-		t float32 = 20
+		r float32
+		t float32
 		pi float32 = 3.14
 		
 	)
-	luas :=  (pi *r * r) * t
-	fmt.Printf("jadi volimenya adalah : %f", luas)
+	fmt.Printf("Masukan jari-jari alas tabung : %.0f ",r)
+	fmt.Scan(&r)
+	fmt.Printf("Masukan tinggi tabung : %.0f",t)
+	fmt.Scan(&t)
+	volume :=  (pi *r * r) * t
+	fmt.Printf("jadi volimenya adalah : %f", volume)
 }
